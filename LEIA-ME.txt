@@ -1,0 +1,21 @@
+GLOBAL ORDER — pacote para publicação
+
+COMO PUBLICAR
+1. Extraia o ZIP.
+2. Envie a pasta global-order inteira para uma hospedagem de site estático, preservando os caminhos internos.
+3. Configure index.html como página inicial (document root/publicação na pasta global-order).
+
+Não há etapa de compilação nem instalação de dependências. A hospedagem precisa servir HTML, JavaScript, imagens e arquivos WOFF2. Para testar localmente, use uma hospedagem estática ou servidor local em vez de abrir o HTML diretamente como file://.
+
+ARQUIVOS PRINCIPAIS
+- index.html: interface, estilos e lógica principal do jogo.
+- assets/world-data.js: geometrias vetoriais e dados do mundo usados pelo mapa.
+- assets/eagle.png: brasão/capa incorporado ao jogo.
+- assets/fonts/: fontes usadas na interface.
+- CREDITS.md: fontes dos dados e créditos de assets.
+
+TECNOLOGIAS
+HTML5, CSS3 e JavaScript puro, com SVG para o mapa, Canvas 2D para gráficos, Web Audio API para a trilha procedural, IndexedDB/localStorage para salvar no navegador e requestAnimationFrame para o avanço automático do tempo. O jogo não depende de framework, CDN, API externa ou backend.
+
+OBSERVAÇÕES
+A campanha fica salva no navegador do jogador; esse salvamento não sincroniza entre dispositivos. Indicadores com ano-base e fontes estão documentados em CREDITS.md; estimativas, efeitos de políticas, crises e projeções pertencem ao modelo de simulação do jogo.
